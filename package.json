@@ -1,5 +1,6 @@
 {
   "name": "html-css-3a-browser-dom-events-storage",
+  "name": "selection-manipulation-project-p",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -17,3 +18,10 @@
   },
   "author": "App Academy"
 }
+    "test": "cypress run",
+    "test-for-failures": "(node scripts/test-script.js &> /dev/null || true) && npm run print",
+    "print": "cat output.json | ../node_modules/node-jq/bin/jq '[(.failures[] | {fullTitle, error: .displayError})]'"
+  },
+  "author": "App Academy"
+}
+  
